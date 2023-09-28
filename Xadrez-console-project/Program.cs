@@ -11,9 +11,11 @@ namespace Xadrez_console_project
             {
                 Tabuleiro tab = new Tabuleiro(8, 8);
 
-                tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao { Linha = 0, Coluna = 0 });
-                tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao { Linha = 1, Coluna = 3 });
-                tab.colocarPeca(new Rei(tab, Cor.Preta), new Posicao { Linha = 2, Coluna = 4 });
+                tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao ( 0, 0));
+                tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao (1, 3));
+                tab.colocarPeca(new Rei(tab, Cor.Preta), new Posicao (2,4));
+
+                tab.colocarPeca(new Torre(tab, Cor.Branca), new Posicao (3,5));
 
                 Tela.ImprimirTabuleiro(tab);
             }
