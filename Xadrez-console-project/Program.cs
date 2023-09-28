@@ -1,4 +1,4 @@
-﻿using Tabuleiro;
+﻿using tabuleiro;
 
 namespace Xadrez_console_project
 {
@@ -6,9 +6,9 @@ namespace Xadrez_console_project
     {
         static void Main(string[] args)
         {
-            Posicao p = new Posicao { Linha = 3, Coluna = 4 };
+            Tabuleiro tab = new Tabuleiro(8, 8);
 
-            Console.WriteLine("Posição: " + p);
+            Tela.ImprimirTabuleiro(tab);
         }
     }
 }
